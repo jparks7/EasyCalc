@@ -12,6 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *display;
 
+@property (nonatomic) BOOL typingNumber;
 
 - (IBAction)numberPressed:(UIButton *)sender;
 - (IBAction)operatorPressed:(UIButton *)sender;
