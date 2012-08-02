@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CalculatorModel.h"
 
 @interface ViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *display;
-
 @property (nonatomic) BOOL typingNumber;
+@property (nonatomic, strong) CalculatorModel *model;
 
 - (IBAction)numberPressed:(UIButton *)sender;
 - (IBAction)operatorPressed:(UIButton *)sender;

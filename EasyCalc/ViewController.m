@@ -15,6 +15,7 @@
 @implementation ViewController
 @synthesize display;
 @synthesize typingNumber = _typingNumber;
+@synthesize model = _model;
 
 - (void)viewDidLoad
 {
@@ -22,6 +23,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     self.typingNumber = NO;
+    self.model = [[CalculatorModel alloc] init];
 }
 
 - (void)viewDidUnload
@@ -54,22 +56,43 @@
 }
 
 - (IBAction)operatorPressed:(UIButton *)sender {
+    
     NSString *operator = sender.titleLabel.text;
-    if ([operator isEqualToString:@"x"]) {
-        NSLog(@"Multiply");
-    } else if ([operator isEqualToString:@"÷"]) {
-        NSLog(@"Divide");
-    } else if ([operator isEqualToString:@"+"]) {
-        NSLog(@"Add");
-    } else if ([operator isEqualToString:@"-"]) {
-        NSLog(@"Subtract");
-    } else if ([operator isEqualToString:@"="]) {
-        NSLog(@"Equate");
+    
+    double currentNumber = [self.display.text doubleValue];
+    
+    if (self.typingNumber) {
+        if ([operator isEqualToString:@"="]) {
+            double result = [self.model performOperationWithOperand:currentNumber];
+            NSLog(@"Result %f", result);
+        } else {
+            self.model.waitingOperand = currentNumber;
+            self.model.operation = operator;
+        }
+        
+        self.typingNumber = NO;
     }
+    
+    
+    
+//    if ([operator isEqualToString:@"x"]) {
+//        NSLog(@"Multiply");
+//    } else if ([operator isEqualToString:@"÷"]) {
+//        NSLog(@"Divide");
+//    } else if ([operator isEqualToString:@"+"]) {
+//        NSLog(@"Add");
+//    } else if ([operator isEqualToString:@"-"]) {
+//        NSLog(@"Subtract");
+//    } else if ([operator isEqualToString:@"="]) {
+//        NSLog(@"Equate");
+//    }
+
+    
 }
 
 - (IBAction)clearPressed:(UIButton *)sender {
     self.display.text = @"0";
+    NSLog(@"Clear Display");
     self.typingNumber = NO; //Changed to NO so that considers it not typing a number, thus allowing the next number typed to replace the 0 in the label. 
 }
 @end
