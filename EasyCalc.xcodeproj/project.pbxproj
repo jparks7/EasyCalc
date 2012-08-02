@@ -16,6 +16,7 @@
 		5BE8F92E15CAE78200B53D5D /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE8F92C15CAE78200B53D5D /* MainStoryboard_iPhone.storyboard */; };
 		5BE8F93115CAE78200B53D5D /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE8F92F15CAE78200B53D5D /* MainStoryboard_iPad.storyboard */; };
 		5BE8F93415CAE78200B53D5D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE8F93315CAE78200B53D5D /* ViewController.m */; };
+		5BE8F93B15CAFE9C00B53D5D /* CalcSolPan.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BE8F93A15CAFE9C00B53D5D /* CalcSolPan.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +24,17 @@
 		5BE8F91A15CAE77900B53D5D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5BE8F91C15CAE77900B53D5D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5BE8F91E15CAE77900B53D5D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		5BE8F92215CAE77900B53D5D /* EasyCalc-Info.plist */ = {isa = PBXFileReference; path = "EasyCalc-Info.plist"; sourceTree = "<group>"; };
+		5BE8F92215CAE77900B53D5D /* EasyCalc-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EasyCalc-Info.plist"; sourceTree = "<group>"; };
 		5BE8F92415CAE77C00B53D5D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5BE8F92615CAE77C00B53D5D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5BE8F92815CAE77F00B53D5D /* EasyCalc-Prefix.pch */ = {isa = PBXFileReference; path = "EasyCalc-Prefix.pch"; sourceTree = "<group>"; };
-		5BE8F92915CAE77F00B53D5D /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		5BE8F92815CAE77F00B53D5D /* EasyCalc-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EasyCalc-Prefix.pch"; sourceTree = "<group>"; };
+		5BE8F92915CAE77F00B53D5D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5BE8F92A15CAE77F00B53D5D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5BE8F92D15CAE78200B53D5D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		5BE8F93015CAE78200B53D5D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		5BE8F93215CAE78200B53D5D /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		5BE8F93215CAE78200B53D5D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5BE8F93315CAE78200B53D5D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5BE8F93A15CAFE9C00B53D5D /* CalcSolPan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CalcSolPan.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				5BE8F92915CAE77F00B53D5D /* AppDelegate.h */,
 				5BE8F92A15CAE77F00B53D5D /* AppDelegate.m */,
 				5BE8F92C15CAE78200B53D5D /* MainStoryboard_iPhone.storyboard */,
+				5BE8F93A15CAFE9C00B53D5D /* CalcSolPan.png */,
 				5BE8F92F15CAE78200B53D5D /* MainStoryboard_iPad.storyboard */,
 				5BE8F93215CAE78200B53D5D /* ViewController.h */,
 				5BE8F93315CAE78200B53D5D /* ViewController.m */,
@@ -154,6 +157,7 @@
 				5BE8F92515CAE77C00B53D5D /* InfoPlist.strings in Resources */,
 				5BE8F92E15CAE78200B53D5D /* MainStoryboard_iPhone.storyboard in Resources */,
 				5BE8F93115CAE78200B53D5D /* MainStoryboard_iPad.storyboard in Resources */,
+				5BE8F93B15CAFE9C00B53D5D /* CalcSolPan.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

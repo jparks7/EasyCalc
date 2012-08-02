@@ -10,4 +10,11 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *display;
+
+
+- (IBAction)numberPressed:(UIButton *)sender;
+- (IBAction)operatorPressed:(UIButton *)sender;
+- (IBAction)clearPressed:(UIButton *)sender;
+
 @end

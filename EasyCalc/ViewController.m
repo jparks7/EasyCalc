@@ -13,6 +13,7 @@
 @end
 
 @implementation ViewController
+@synthesize display;
 
 - (void)viewDidLoad
 {
@@ -35,4 +36,27 @@
     }
 }
 
+- (IBAction)numberPressed:(UIButton *)sender {
+    NSString *newDisplay = [self.display.text stringByAppendingFormat:@"%@", sender.titleLabel.text];
+    self.display.text = newDisplay;
+}
+
+- (IBAction)operatorPressed:(UIButton *)sender {
+    NSString *operator = sender.titleLabel.text;
+    if ([operator isEqualToString:@"x"]) {
+        NSLog(@"Multiply");
+    } else if ([operator isEqualToString:@"÷"]) {
+        NSLog(@"Divide");
+    } else if ([operator isEqualToString:@"+"]) {
+        NSLog(@"Add");
+    } else if ([operator isEqualToString:@"-"]) {
+        NSLog(@"Subtract");
+    } else if ([operator isEqualToString:@"="]) {
+        NSLog(@"Equate");
+    }
+}
+
+- (IBAction)clearPressed:(UIButton *)sender {
+    self.display.text = @"0";
+}
 @end
