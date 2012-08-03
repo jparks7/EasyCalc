@@ -61,17 +61,18 @@
     
     double currentNumber = [self.display.text doubleValue];
     
-    if (self.typingNumber) {
+    //if (self.typingNumber) {
         if ([operator isEqualToString:@"="]) {
             double result = [self.model performOperationWithOperand:currentNumber];
             NSLog(@"Result %f", result);
+            self.display.text = [NSString stringWithFormat:@"%g", result];//%g instead of %f does siginificant number of digits.
         } else {
             self.model.waitingOperand = currentNumber;
             self.model.operation = operator;
         }
         
         self.typingNumber = NO;
-    }
+    //}
     
     
     

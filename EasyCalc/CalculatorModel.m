@@ -18,17 +18,21 @@
     
     if ([self.operation isEqualToString:@"x"]) {
         NSLog(@"Multiply");
+        result = self.waitingOperand * newOperator;
     } else if ([self.operation isEqualToString:@"÷"]) {
         NSLog(@"Divide");
+        result = self.waitingOperand / newOperator;
     } else if ([self.operation isEqualToString:@"+"]) {
         NSLog(@"Add");
+        result = self.waitingOperand + newOperator;
     } else if ([self.operation isEqualToString:@"-"]) {
         NSLog(@"Subtract");
+        result = self.waitingOperand - newOperator;
     } else if ([self.operation isEqualToString:@"="]) {
         NSLog(@"Equate");
     }
     
-    return 0.0;
+    return result;
 }
 
 @end
