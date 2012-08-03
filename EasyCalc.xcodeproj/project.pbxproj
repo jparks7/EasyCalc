@@ -18,6 +18,7 @@
 		5BE8F93415CAE78200B53D5D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE8F93315CAE78200B53D5D /* ViewController.m */; };
 		5BE8F93B15CAFE9C00B53D5D /* CalcSolPan.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BE8F93A15CAFE9C00B53D5D /* CalcSolPan.png */; };
 		5BE8F94615CB194D00B53D5D /* CalculatorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE8F94515CB194D00B53D5D /* CalculatorModel.m */; };
+		E3AAB35815CB686400B61108 /* CalcLabelBackground2.png in Resources */ = {isa = PBXBuildFile; fileRef = E3AAB35715CB686400B61108 /* CalcLabelBackground2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		5BE8F93A15CAFE9C00B53D5D /* CalcSolPan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CalcSolPan.png; sourceTree = "<group>"; };
 		5BE8F94415CB194D00B53D5D /* CalculatorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorModel.h; sourceTree = "<group>"; };
 		5BE8F94515CB194D00B53D5D /* CalculatorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorModel.m; sourceTree = "<group>"; };
+		E3AAB35715CB686400B61108 /* CalcLabelBackground2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CalcLabelBackground2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 		5BE8F90B15CAE77900B53D5D = {
 			isa = PBXGroup;
 			children = (
+				E3AAB35715CB686400B61108 /* CalcLabelBackground2.png */,
 				5BE8F92015CAE77900B53D5D /* EasyCalc */,
 				5BE8F91915CAE77900B53D5D /* Frameworks */,
 				5BE8F91715CAE77900B53D5D /* Products */,
@@ -163,6 +166,7 @@
 				5BE8F92E15CAE78200B53D5D /* MainStoryboard_iPhone.storyboard in Resources */,
 				5BE8F93115CAE78200B53D5D /* MainStoryboard_iPad.storyboard in Resources */,
 				5BE8F93B15CAFE9C00B53D5D /* CalcSolPan.png in Resources */,
+				E3AAB35815CB686400B61108 /* CalcLabelBackground2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +302,7 @@
 				5BE8F93915CAE78200B53D5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
