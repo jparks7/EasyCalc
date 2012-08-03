@@ -41,6 +41,8 @@
     }
 }
 
+
+
 - (IBAction)numberPressed:(UIButton *)sender {
     //If the typingNumber variable is YES
     if (self.typingNumber) {
@@ -96,4 +98,17 @@
     NSLog(@"Clear Display");
     self.typingNumber = NO; //Changed to NO so that considers it not typing a number, thus allowing the next number typed to replace the 0 in the label. 
 }
+
+
+- (IBAction)clearAll:(UIButton *)sender {
+    
+    self.typingNumber = NO;
+    
+    double currentNumber = [self.display.text doubleValue];
+    self.model.waitingOperand = currentNumber;
+      
+    
+}
+
+
 @end

@@ -15,8 +15,11 @@
 @property (nonatomic) BOOL typingNumber;
 @property (nonatomic, strong) CalculatorModel *model;
 
+
 - (IBAction)numberPressed:(UIButton *)sender;
 - (IBAction)operatorPressed:(UIButton *)sender;
 - (IBAction)clearPressed:(UIButton *)sender;
+- (IBAction)clearAll:(UIButton *)sender;
+
 
 @end

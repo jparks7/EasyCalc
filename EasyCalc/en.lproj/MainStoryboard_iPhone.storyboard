@@ -283,6 +283,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="clearAll:" destination="2" eventType="touchDownRepeat" id="hyQ-bP-2Qv"/>
                                     <action selector="clearPressed:" destination="2" eventType="touchUpInside" id="Xe4-qO-FF1"/>
                                 </connections>
                             </button>
@@ -324,17 +325,6 @@
         <image name="CalcLabelBackground2.png" width="254" height="55"/>
         <image name="CalcSolPan.png" width="208" height="28"/>
     </resources>
-    <classes>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="clearPressed:" candidateClass="UIButton"/>
-                <relationship kind="action" name="numberPressed:" candidateClass="UIButton"/>
-                <relationship kind="action" name="operatorPressed:" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="display" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
