@@ -106,7 +106,6 @@
     
     double currentNumber = [self.display.text doubleValue];
     self.model.waitingOperand = currentNumber;
-      
     
 }
 

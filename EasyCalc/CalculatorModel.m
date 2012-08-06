@@ -30,7 +30,7 @@
         result = self.waitingOperand - newOperator;
     } else if ([self.operation isEqualToString:@"="]) {
         NSLog(@"Equate");
-    }
+    } 
     
     return result;
     
